@@ -1,17 +1,19 @@
-# Neural Network and Genetic Algorithm Study
+# Neural Networks and Genetic Algorithms
 
-The supplied coursework combines a manually implemented multilayer perceptron with genetic optimization examples. It was developed as a team exercise; personal names are omitted.
+This project combines a manually implemented multilayer perceptron with genetic optimisation in MATLAB.
 
-## Genetic optimization
+## Genetic optimisation
 
-The single-variable exercise maximizes `15*x - x^2` on the interval from 0 to 15, using binary chromosomes. Its documented teaching setup uses 4 bits, 6 individuals and 20 generations, with crossover probability 0.7 and mutation probability 0.1. Check the current data scripts before each run because experiment parameters can differ from the report.
+The first example maximises `15*x - x^2` on the interval [0, 15] using binary chromosomes. The study uses 4 bits, a population of 6 individuals and 20 generations, with crossover probability 0.7 and mutation probability 0.1.
 
-The second exercise optimizes a two-variable nonlinear surface over a bounded domain. The code contains binary conversion routines, fitness evaluation, mutation and both single-point and multipoint crossover. Use the menu to select a case and inspect its objective definition in the data scripts.
+The second example optimises a nonlinear function of two variables over a bounded domain. Both examples include fitness evaluation, selection, mutation and crossover. The menu provides single-point and multipoint crossover options.
 
-## Perceptron study
+The data scripts define the objective function and the population and crossover settings for each run.
 
-The neural-network folder supplies example inputs, desired outputs, initial weights, forward propagation and backpropagation scripts. Inspect the learning rate and stopping tolerance before starting. The default training loop has no iteration limit, and numerical correctness has not been validated in this preparation pass.
+## Neural-network training
 
-## Source-document treatment
+The multilayer perceptron is implemented with separate scripts for inputs, target outputs, initial weights, forward propagation and backpropagation. The learning rate and stopping tolerance are set in the data scripts.
 
-The original Word report was used to understand the exercise. It contains names in its text and author metadata and is excluded from the public package. This anonymous summary preserves the project context without publishing that original document.
+## Binary encoding
+
+The encoding utilities handle binary integers, fractional values and two's-complement representations used in the chromosome calculations.

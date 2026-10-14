@@ -1,8 +1,8 @@
 # Neural Networks and Genetic Algorithms in MATLAB
 
-A collection of MATLAB learning and optimization exercises covering a multilayer perceptron, genetic algorithms and binary chromosome encoding.
+This project covers neural-network training and genetic optimisation in MATLAB, with a manually implemented multilayer perceptron and binary chromosome encoding.
 
-## What it does
+## Main features
 
 - Implements forward propagation and backpropagation for neural-network training.
 - Optimizes single-variable and two-variable objective functions.
@@ -11,11 +11,11 @@ A collection of MATLAB learning and optimization exercises covering a multilayer
 
 ## Results
 
-Figures from the coursework report, described in the [algorithm study notes](docs/algorithm-notes.md).
+The optimisation results are described in the [algorithm notes](docs/algorithm-notes.md).
 
 ### Single-variable optimization
 
-The exercise maximizes `15*x - x^2` over the interval from 0 to 15. The plot shows the final population on the objective curve.
+The first example maximises `15*x - x^2` over the interval from 0 to 15. The plot shows the final population on the objective curve.
 
 ![Final genetic algorithm population on a single-variable objective](docs/results/single-variable-optimization.png)
 
@@ -39,4 +39,4 @@ Run each example from its corresponding folder:
 
 The genetic-algorithm menu selects the objective and crossover method. The data scripts configure the learning and optimization examples.
 
-Developed as a collaborative academic engineering project.
+Academic group project at the National Polytechnic School of Algiers.
